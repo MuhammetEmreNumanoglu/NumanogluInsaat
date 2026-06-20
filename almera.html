@@ -201,7 +201,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous" defer></script>
-  <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js" defer></script>
+  <!-- ScrollReveal – masaüstünde tam, mobilde atla -->
+  <script>
+    if (window.innerWidth > 768) {
+      var srScript = document.createElement('script');
+      srScript.src = 'https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js';
+      srScript.defer = true;
+      document.head.appendChild(srScript);
+    }
+  </script>
   <script src="js/audio-manager.js" defer></script>
 
   <script>
