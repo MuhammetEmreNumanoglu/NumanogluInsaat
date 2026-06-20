@@ -8,6 +8,7 @@
   font-weight: 500;
   line-height: 1.2;
 }
+
 .nav-link-custom {
   font-size: 20px;
   font-weight: 700;
@@ -19,14 +20,15 @@
 
 
 
-*,*::after {
+*,
+*::after {
   font-family: "poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   color: #ffffff;
-  
+
 }
 
 
@@ -54,14 +56,17 @@ p {
   border: none;
   color: rgb(243, 232, 194);
 }
+
 .container {
- /*  max-width: 88%; */
+  /*  max-width: 88%; */
   margin: 0 auto;
 }
+
 .header {
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; /* Masaüstünde parallax */
+  background-attachment: fixed;
+  /* Masaüstünde parallax */
   height: 100vh;
 }
 
@@ -82,6 +87,7 @@ p {
   .header {
     background-attachment: scroll;
   }
+
   #hero-header {
     background-attachment: scroll;
     background-position: center top;
@@ -111,16 +117,19 @@ ul {
 li {
   margin-left: 30px;
 }
+
 a {
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
 }
-.dropbtn{
+
+.dropbtn {
   color: #ffffff;
   font-weight: bold;
   font-size: 22px;
 }
+
 .header-text {
   position: absolute;
   top: 50%;
@@ -162,6 +171,7 @@ h3 {
   position: relative;
   overflow: hidden;
 }
+
 .btn-coffee::after {
   content: "Danışın";
   position: absolute;
@@ -175,15 +185,19 @@ h3 {
   align-items: center;
   transition: 0.4s all ease-in-out;
 }
+
 .btn-coffee:hover::after {
   top: 0;
 }
+
 .about {
   margin-bottom: 150px;
 }
+
 .about-title {
   margin: 60px 0;
 }
+
 .about-title h2 {
   width: 100%;
   text-align: center;
@@ -192,6 +206,7 @@ h3 {
   font-size: 40px;
   font-weight: 600;
 }
+
 .about-title h2::after {
   content: "";
   width: 30px;
@@ -200,6 +215,7 @@ h3 {
   margin: 0 auto;
   display: block;
 }
+
 .about-content {
   display: flex;
   align-items: center;
@@ -224,7 +240,7 @@ h3 {
 }
 
 .navbar-toggler {
-        background: #f9cda6;
+  background: #f9cda6;
 }
 
 h4 {
@@ -238,11 +254,13 @@ h4 {
   font-weight: 500;
   font-size: 80px;
 }
+
 #asteriks {
   color: #1a5475;
   margin-bottom: 25px;
   text-align: center;
 }
+
 .about-text p {
   font-size: 22px;
   text-align: center;
@@ -259,6 +277,7 @@ h4 {
   column-gap: 100px;
   margin-top: 50px;
 }
+
 .portfolio-item {
   width: 25%;
   height: 300px;
@@ -281,8 +300,10 @@ h4 {
   transition: transform 0.5s ease-in-out;
   border-radius: 10px;
 }
+
 .portfolio-item:hover img {
-  will-change: transform; /* Sadece hover'da aktif */
+  will-change: transform;
+  /* Sadece hover'da aktif */
 }
 
 .overlay {
@@ -304,6 +325,7 @@ h4 {
 .portfolio-item:hover .overlay {
   top: 0;
 }
+
 .portfolio-item:hover img {
   transform: scale(1.2);
 }
@@ -319,15 +341,17 @@ h4 {
   font-size: 30px;
   font-weight: 500;
 }
+
 .contact h2::after {
   content: "";
   width: 30px;
   height: 3px;
-  background-color:#dacaa9;
+  background-color: #dacaa9;
   margin: 0 auto;
   display: block;
   margin-top: 10px;
 }
+
 .contact-content {
   margin-top: 60px;
   display: flex;
@@ -341,10 +365,11 @@ h4 {
   margin-bottom: 100px;
   flex-direction: column;
 }
+
 .contact-item i {
   font-size: 25px;
   margin-bottom: 30px;
-  color:#dacaa9;
+  color: #dacaa9;
 }
 
 .contact-item p {
@@ -352,6 +377,7 @@ h4 {
   line-height: 33px;
   text-align: center;
 }
+
 /*Contact End*/
 
 /*Footer Start*/
@@ -378,6 +404,7 @@ h4 {
 .footer {
   background-color: black;
 }
+
 .footer-copyright {
   color: white;
   text-align: center;
@@ -386,6 +413,7 @@ h4 {
   font-size: 15px;
   margin-bottom: 24px;
 }
+
 .footer-content {
   display: flex;
   align-items: center;
@@ -403,6 +431,7 @@ h4 {
   font-size: 25px;
   padding: 0 25px;
 }
+
 .footer-social:first-child {
   margin-left: 70px;
 }
@@ -414,60 +443,67 @@ h4 {
 }
 
 .navbar {
-  padding:50px;
+  padding: 50px;
 }
 
 
 @media (max-width: 800px) {
-.header-menu ul{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: column;
-  position: absolute;
-  top: 120px;
-  left: 0;
-  background-color: #271a0e;
-  opacity: 0.98;
-  width: 100%;
-  overflow: hidden;
-  transition: max-height .6s;
-  z-index: 2;
+  .header-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    background-color: #271a0e;
+    opacity: 0.98;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height .6s;
+    z-index: 2;
+
+  }
+
+  .header-menu ul li {
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+
+  .header-menu ul li .dropdown .dropdown-content a {
+
+    font-size: 17px;
+  }
+
+  .header-menu ul li a {
+
+    color: white;
+  }
+
+  .header-menu #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
 
 }
-.header-menu ul li{
-  margin-right: 50px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 
-}
-.header-menu ul li .dropdown .dropdown-content a{
-
-  font-size: 17px;
-}
-.header-menu ul li a{
-
-  color: white;
-}
-.header-menu #menu-icon{
-  display: block;
-  cursor: pointer;
-}
-
-
-}
 /*Footer End*/
 
 /*About Media Start*/
 @media (max-width: 990px) {
-  .about-img{
+  .about-img {
     width: 100%;
     margin-bottom: 30px;
   }
-  .about-text{
+
+  .about-text {
     width: 100%;
   }
-  .portfolio{
+
+  .portfolio {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -475,103 +511,122 @@ h4 {
     flex-wrap: wrap;
     row-gap: 15px;
     column-gap: 15px;
-    
+
   }
+
   .navbar {
     background-color: #4b4642;
-    padding:10px;
+    padding: 10px;
   }
-  .container-fluid{
+
+  .container-fluid {
     padding: 0px;
   }
 }
 
 /*About Media End*/
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   --bs-gutter-x: 0.5rem;
 
 }
 
 /*Portfolio Media Start*/
 @media (max-width: 996px) {
-  .portfolio .portfolio-item{
+  .portfolio .portfolio-item {
     flex-basis: 30%;
     column-gap: 10px;
     row-gap: 15px;
   }
+
   .portfolio {
-  column-gap: 10px;
-  margin-top: 50px;
-}
+    column-gap: 10px;
+    margin-top: 50px;
+  }
+
   .portfolio-item {
     left: 4%;
   }
 }
+
 @media (max-width: 580px) {
-  .portfolio .portfolio-item{
+  .portfolio .portfolio-item {
     flex-basis: 90%;
     margin-left: 20px;
   }
 
   .portfolio {
-  column-gap: 10px;
-  margin-top: 50px;
-}
+    column-gap: 10px;
+    margin-top: 50px;
+  }
+
   .portfolio-item {
     left: 1%;
   }
+
   .portfolio-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s all ease-in-out;
     border-radius: 10px;
-    
+
   }
+
   h1 {
     font-size: 6rem;
     color: #ad794e;
     /* color: #fa811e; */
-}
-.first-letter {
-  font-size: 9.3rem;
-  color: #ad794e;
+  }
 
+  .first-letter {
+    font-size: 9.3rem;
+    color: #ad794e;
+
+  }
+
+  .about-img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+  }
 }
-.about-img img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  
-}
-}
+
 /*Portfolio Media End*/
 
 
 /*Contact Media Start*/
 @media (max-width: 800px) {
-.contact-content{
-  flex-direction: column;
+  .contact-content {
+    flex-direction: column;
+  }
 }
-}
+
 @media (max-width: 500px) {
-h4{
-font-size: 60px;
+  h4 {
+    font-size: 60px;
+  }
+
+  .contact-item p {
+    font-size: 18px;
+
+  }
 }
-.contact-item p {
-  font-size: 18px;
+
+@media (max-width: 350px) {
+  .first-letter {
+    font-size: 7.3rem;
+
+
+  }
 
 }
-}
-
-  @media (max-width: 350px) {
-    .first-letter {
-      font-size: 7.3rem;
- 
-    
-    }
-    
-      }
 
 
 /*Contact Media End*/
@@ -601,9 +656,13 @@ font-size: 60px;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #755333;}
+.dropdown-content a:hover {
+  background-color: #755333;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -611,19 +670,23 @@ font-size: 60px;
   left: auto;
   margin-top: var(--bs-dropdown-spacer);
 }
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 0;
   align-items: center;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
   background-color: #271a0e;
 
 }
+
 @media (max-width:430px) {
   .dropdown-item {
-  font-size: 15px;
+    font-size: 15px;
   }
+
   .about-text p {
     font-size: 18px;
     text-align: center;

@@ -8,7 +8,7 @@
 (function () {
   var STORAGE_KEY     = 'bgAudioTime';
   var STORAGE_PLAYING = 'bgAudioPlaying';
-  var AUDIO_SRC       = 'Numanoğlu.mp3';
+  var AUDIO_SRC       = 'numanoglu.mp3';
 
   var audio = new Audio(AUDIO_SRC);
   audio.loop    = true;
