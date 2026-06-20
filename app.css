@@ -78,8 +78,8 @@ p {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  /* iOS Safari 100vh fix */
-  min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Mobilde background-attachment:fixed çok yavaş (her scroll'da repaint) */
@@ -90,7 +90,6 @@ p {
 
   #hero-header {
     background-attachment: scroll;
-    background-position: center top;
   }
 }
 
@@ -131,20 +130,19 @@ a {
 }
 
 .header-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+  flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  padding-bottom: 80px;
 }
 
 h1 {
   font-size: 10rem;
   font-weight: 100;
-  line-height: 0.4;
+  line-height: 1.0;
   letter-spacing: 2px;
   font-family: "Herr Von Muellerhoff", serif;
   color: #ad794e;
@@ -364,6 +362,18 @@ h4 {
   flex-basis: 33%;
   margin-bottom: 100px;
   flex-direction: column;
+}
+
+.google-maps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.google-maps iframe {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
 }
 
 .contact-item i {
