@@ -1,92 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Numanoğlu İnşaat</title>
+  <title>Numanoğlu İnşaat – Güvenilir İnşaat ve Müteahhitlik</title>
+  <meta name="description" content="Numanoğlu İnşaat; konut, ticari ve altyapı projelerinde güvenilir müteahhitlik hizmetleri sunar. İstanbul genelinde tamamlanmış ve devam eden projelerimizi inceleyin." />
+
+  <!-- Preconnect for faster external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/numanogluinsaatlogo.PNG" />
+
+  <!-- Preload hero image (LCP optimization) -->
+  <link rel="preload" as="image" href="img/insaat4.webp" type="image/webp" />
+
+  <!-- Google Fonts – only needed weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="icon" type="image/jpg" href="img/numanogluinsaatlogo.PNG" />
 
+  <!-- Font Awesome – defer with media trick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" /></noscript>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="app1.css">
-  <link rel="stylesheet" href="app.css">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="app.css" />
 </head>
 
-<body style="background-color: #282424">
+<body style="background-color:#282424">
   <!--Header Start-->
   <header id="header">
-    <div class="header" style=" background-image: url('img/insaat4.jpg');
-      background-position: center;
-      background-size: cover; /* Resmin her ekranda orantılı şekilde görünmesini sağlar */
-      background-attachment: Scroll;
-      width: 100%;
-      height: 100vh; ">
+    <div class="header" style="background-image:url('img/insaat4.webp');background-position:center;background-size:cover;background-attachment:Scroll;width:100%;height:100vh;">
       <div>
         <div class="header-navbar">
-          <nav class="navbar navbar-expand-lg " style="     
- z-index: 3;">
+          <nav class="navbar navbar-expand-lg" style="z-index:3;">
             <div class="container-fluid">
-
-              <a class="navbar-brand" style=" font-size: 30px;  font-family: 'poppins', sans-serif; color: white;    margin-top: 0;
-                margin-bottom: .5rem;
-                font-weight: 500;
-                line-height: 1.2;
-                color: var(--bs-heading-color);" href="#">Numanoğlu İnşaat</a>
+              <a class="navbar-brand nav-brand-text" href="index.html">Numanoğlu İnşaat</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Navigasyonu aç/kapat">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                      style=" font-size: 20px; font-weight: 700; font-family: 'poppins', sans-serif; color: white;"
-                      href="index.html">Anasayfa</a>
+                    <a class="nav-link active nav-link-custom" aria-current="page" href="index.html">Anasayfa</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="hakkimizda-link"
-                      style=" font-size: 20px; font-weight: 700; font-family: 'poppins', sans-serif; color: white;"
-                      href="#">Vizyonumuz</a>
+                    <a class="nav-link nav-link-custom" id="hakkimizda-link" href="#about">Vizyonumuz</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="contact-link"
-                      style=" font-size: 20px; font-weight: 700; font-family: 'poppins', sans-serif; color: white;"
-                      href="#">Bize Ulaşın</a>
+                    <a class="nav-link nav-link-custom" id="contact-link" href="#contact">Bize Ulaşın</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      style=" font-size: 20px; font-weight: 700; font-family: 'poppins', sans-serif; color: white;">
+                    <a class="nav-link dropdown-toggle nav-link-custom" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
                       Projelerimiz
                     </a>
-                    <ul class="dropdown-menu" style="background-color: #3f3225;">
+                    <ul class="dropdown-menu" style="background-color:#3f3225;">
                       <li>
-                        <h6 class="dropdown-header" style="color: #fff;">Tamamlanan Projeler</h6>
+                        <h6 class="dropdown-header" style="color:#fff;">Tamamlanan Projeler</h6>
                       </li>
-                      <li><a class="dropdown-item" style="color: white;" href="azizmahmutprojesi.html">Aziz Mahmut
-                          Hüdayi Projesi</a></li>
-                      <li><a class="dropdown-item" style="color: white;" href="almera.html">Almera Projesi</a></li>
-                      <li><a class="dropdown-item" style="color: white;" href="kosk.html">Köşk Projesi</a></li>
-                      <li><a class="dropdown-item" style="color: white;" href="kurtkoy.html">Kurtköy Projesi</a></li>
-                      <li><a class="dropdown-item" style="color: white;" href="ustkaynarca.html">Üst Kaynarca
-                          Projesi</a></li>
+                      <li><a class="dropdown-item" style="color:white;" href="azizmahmutprojesi.html">Aziz Mahmut Hüdayi Projesi</a></li>
+                      <li><a class="dropdown-item" style="color:white;" href="almera.html">Almera Projesi</a></li>
+                      <li><a class="dropdown-item" style="color:white;" href="kosk.html">Köşk Projesi</a></li>
+                      <li><a class="dropdown-item" style="color:white;" href="kurtkoy.html">Kurtköy Projesi</a></li>
+                      <li><a class="dropdown-item" style="color:white;" href="ustkaynarca.html">Üst Kaynarca Projesi</a></li>
+                      <li><hr class="dropdown-divider"></li>
                       <li>
-                        <hr class="dropdown-divider">
+                        <h6 class="dropdown-header" style="color:#fff;">Devam Eden Projeler</h6>
                       </li>
-                      <li>
-                        <h6 class="dropdown-header" style="color: #fff;">Devam Eden Projeler</h6>
-                      </li>
-                      <li><a class="dropdown-item" style="color: white;" href="besiktas.html">Beşiktaş Projesi</a></li>
+                      <li><a class="dropdown-item" style="color:white;" href="besiktas.html">Beşiktaş Projesi</a></li>
                     </ul>
-
                   </li>
                 </ul>
               </div>
@@ -94,52 +84,17 @@
           </nav>
           <div class="header-text">
             <h1><span class="first-letter">N</span>umanoglu</h1>
-            <!-- <h3>Sizin Hayalleriniz Bizim İşimiz</h3> -->
             <br />
-            <a href="#" class="btn-coffee">Hadi Başlayalım</a>
+            <a href="#contact" class="btn-coffee">Hadi Başlayalım</a>
           </div>
         </div>
       </div>
+    </div>
   </header>
   <!--Header End-->
 
-  <br /><br /><br /><br /><br />
-  <!--Project Start-->
-  <!--
-    <section id="about 1">
-      <div class="about">
-        <div class="container">
-          <div class="about-title">
-            <h2>Projelerimiz</h2>
-          </div>
-          <div class="about-content">
-            <div class="about-img anime-left">
-              <img src="img/acıkturbesok.JPG" alt="" />
-            </div>
-            <div class="about-text anime-right">
-              <h4>Projelerimiz</h4>
-
-              <p>
-                Numanoğlu İnşaat olarak, her biri titizlikle planlanmış ve
-                zamanında teslim edilerek başarıyla tamamlanmış birçok projeye
-                imza attık. Müteahhitlik ve inşaat alanındaki geniş
-                deneyimimizle, çeşitli projelerde yüksek kaliteyi hedefledik.
-                Konut, ticaret, altyapı gibi farklı alanlarda
-                gerçekleştirdiğimiz projelerimiz, sektördeki güvenilirliğimizi
-                pekiştirdi. Her projemizde modern tasarımlar, sağlam yapılar ve
-                sürdürülebilir çözümler sunmayı ilke edindik. İleriye dönük
-                projelerimizde de aynı titizlikle çalışarak, sektöre değer
-                katmaya devam edeceğiz.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
-  <!--Project End-->
-  <!--About Start-->
   <br /><br /><br />
+  <!--About Start-->
   <section id="about">
     <div class="about">
       <div class="container">
@@ -148,13 +103,14 @@
         </div>
         <div class="about-content">
           <div class="about-img anime-left">
-            <img src="img/tadilat.PNG" alt="" />
+            <picture>
+              <source srcset="img/tadilat.webp" type="image/webp" />
+              <img src="img/tadilat.PNG" alt="Numanoğlu İnşaat – Tadilat ve Renovasyon Projesi" width="800" height="700" loading="lazy" />
+            </picture>
           </div>
           <div class="about-text anime-right">
             <h4>Vizyonumuz</h4>
-            <div class="asteriks">
-              <!-- <i class="fas fa-asterisk"></i> -->
-            </div>
+            <div class="asteriks"></div>
             <p>
               Numanoğlu İnşaat, inşaat sektöründeki güçlü deneyimi ve
               profesyonelliği ile müşterilerine kaliteli hizmet sunmayı
@@ -171,6 +127,7 @@
     </div>
   </section>
   <!--About End-->
+
   <br /><br /><br />
   <!--Contact Us Start-->
   <section id="contact">
@@ -195,8 +152,8 @@
             <div class="google-maps">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.4450432985917!2d29.013596405984924!3d41.02439255725802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab789022d53c1%3A0x2a1a7ee5a22f4f74!2zTnVtYW5vxJ9sdSDEsG7Fn2FhdA!5e0!3m2!1str!2str!4v1739111657911!5m2!1str!2str"
-                width="400" height="190" style="border: 0" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="400" height="190" style="border:0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Numanoğlu İnşaat Konum"></iframe>
             </div>
           </div>
           <div class="contact-item anime-top">
@@ -214,125 +171,68 @@
     <div class="footer">
       <div class="footer-content">
         <div class="page-title">
-          <h6 style="padding-top: 10px">Copyright © 2025 Numanoğlu İnşaat</h6>
+          <h6 style="padding-top:10px">Copyright © 2025 Numanoğlu İnşaat</h6>
         </div>
         <div class="footer-copyright">
-          <p>
-            <!-- Hepimiz birimiz için birimiz hepimiz için -->
-          </p>
+          <p></p>
           <br />
         </div>
-        <nav class="footer-social">
+        <nav class="footer-social" aria-label="Sosyal medya">
           <ul>
-            <li id="#"><i class="fab fa-google-plus-g"></i></li>
-            <li id="#"><i class="fa-brands fa-x-twitter"></i></li>
-            <li id="#">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <li><i class="fab fa-google-plus-g"></i></li>
+            <li><i class="fa-brands fa-x-twitter"></i></li>
+            <li>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </footer>
-
   <!--Footer End-->
-  <script>
-    window.sr = ScrollReveal();
-    sr.reveal(".anime-left", {
-      origin: "left",
-      duration: 1000,
-      distance: "25rem",
-      delay: 350,
-    });
-    sr.reveal(".anime-right", {
-      origin: "right",
-      duration: 1000,
-      distance: "25rem",
-      delay: 550,
-    });
-    sr.reveal(".anime-top", {
-      origin: "top",
-      duration: 1000,
-      distance: "25rem",
-      delay: 550,
-    });
-    sr.reveal(".anime-bottom", {
-      origin: "bottom",
-      duration: 1000,
-      distance: "25rem",
-      delay: 550,
-    });
-  </script>
-  <script>
-    var menuitems = document.getElementById("menuitems");
-    menuitems.style.maxHeight = "0px";
 
-    function menuToggle() {
-      if (menuitems.style.maxHeight == "0px") {
-        menuitems.style.maxHeight = "75vh";
-      } else {
-        menuitems.style.maxHeight = "0px";
-      }
-    }</script>
-  <script>let slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("demo");
-      let captionText = document.getElementById("caption");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-  </script>
-
-  <script>
-    document
-      .getElementById("contact-link")
-      .addEventListener("click", function (event) {
-        event.preventDefault(); // Sayfanın yeniden yüklenmesini önler
-        document
-          .getElementById("contact")
-          .scrollIntoView({ behavior: "smooth" });
-      }); document
-        .getElementById("hakkimizda-link")
-        .addEventListener("click", function (event) {
-          event.preventDefault(); // Sayfanın yeniden yüklenmesini önler
-          document
-            .getElementById("about")
-            .scrollIntoView({ behavior: "smooth" });
-        });
-  </script>
-  <script>
-    window.onload = function () {
-      window.scrollTo(0, 0);
-    };
-  </script>
-
+  <!-- Bootstrap JS (defer) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="js/audio-manager.js"></script>
+    crossorigin="anonymous" defer></script>
+
+  <!-- ScrollReveal (defer) -->
+  <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js" defer></script>
+
+  <!-- Audio manager (defer) -->
+  <script src="js/audio-manager.js" defer></script>
+
+  <!-- Site scripts -->
+  <script>
+    // Scroll reveal – runs after DOM + SR script loaded
+    window.addEventListener('load', function () {
+      if (window.ScrollReveal) {
+        var sr = ScrollReveal();
+        sr.reveal('.anime-left',   { origin: 'left',   duration: 900, distance: '60px', delay: 200 });
+        sr.reveal('.anime-right',  { origin: 'right',  duration: 900, distance: '60px', delay: 350 });
+        sr.reveal('.anime-top',    { origin: 'top',    duration: 900, distance: '60px', delay: 350 });
+        sr.reveal('.anime-bottom', { origin: 'bottom', duration: 900, distance: '60px', delay: 350 });
+      }
+    });
+
+    // Smooth scroll for nav links
+    document.addEventListener('DOMContentLoaded', function () {
+      var contactLink = document.getElementById('contact-link');
+      var aboutLink   = document.getElementById('hakkimizda-link');
+      if (contactLink) {
+        contactLink.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+      if (aboutLink) {
+        aboutLink.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
