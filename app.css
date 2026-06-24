@@ -20,6 +20,13 @@
 
 
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
 *,
 *::after {
   font-family: "poppins", sans-serif;
@@ -453,7 +460,7 @@ h4 {
 }
 
 .navbar {
-  padding: 50px;
+  padding: 20px 30px;
 }
 
 
@@ -542,7 +549,9 @@ h4 {
 .container-sm,
 .container-xl,
 .container-xxl {
-  --bs-gutter-x: 0.5rem;
+  --bs-gutter-x: 0rem;
+  padding-left: 0;
+  padding-right: 0;
 
 }
 
